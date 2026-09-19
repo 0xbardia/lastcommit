@@ -118,11 +118,10 @@ artifacts/lastcommit/docs/        Historical certification evidence
 - Evidence URLs are HTTPS hostnames without credentials, ports, or IP literals. GenLayer’s renderer still owns DNS and redirects, so DNS rebinding / redirect-target policy is a renderer assumption.
 - `start_review` is public; chain state blocks stale/duplicate effective transitions, but network throttling is an operator concern.
 - No automatic transfer of external ownership or assets.
-- License terms for this repository are not yet chosen by the owner; see `LICENSE_DECISION_REQUIRED`.
 
 ## License
 
-See `LICENSE_DECISION_REQUIRED`. A SPDX license has not been authorized in the production source.
+LastCommit is licensed under the [MIT License](LICENSE). Copyright (c) 2026 0xbardia.
 
 ## Security
 
