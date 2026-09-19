@@ -1,11 +1,14 @@
 # GenLayer Studio verification
 
-Status: DEPLOYED (final source)
+> HISTORICAL. This snapshot is not the current deployment.
+> Current contract: `0x8F1DEEB53214F25341aB3C153d4164dF73DD392c`
+
+Status: superseded Studionet snapshot
 
 Network: studionet
 RPC: https://studio.genlayer.com/api
 Chain ID: 61999
-Contract: `0x9A5036CB16166071979c94DE8eB571dA295f2719`
+Contract (superseded, do not use): `0x9A5036CB16166071979c94DE8eB571dA295f2719`
 Deploy tx: `0x13f2c9165c4f45f3ce27ab1e28ad8886347a883a2fe80dc7838bf69bebb74545`
 Schema compile: SUCCESS
 
