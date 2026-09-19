@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #141311;
+  --color-surface: #1c1a17;
+  --color-paper: #efe6d6;
+  --color-ink: #efe6d6;
+  --color-muted: #b7ad9a;
+  --color-line: #2c2924;
+  --color-rust: #c45c26;
+  --color-moss: #6f8f62;
+  --color-amber: #c4923a;
+  --color-abandon: #a84b42;
+  --font-sans: "Newsreader", "Iowan Old Style", Palatino, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --radius: 0.125rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-paper);
+    outline-offset: 2px;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease, opacity 160ms ease;
+  }
+
+  input,
+  textarea,
+  select {
+    border-radius: var(--radius);
+  }
+
+  input[aria-invalid="true"],
+  textarea[aria-invalid="true"],
+  select[aria-invalid="true"] {
+    border-color: var(--color-abandon);
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  ::selection {
+    background: var(--color-rust);
+    color: var(--color-bg);
+  }
+
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 20;
+    background: var(--color-paper);
+    color: var(--color-bg);
+    padding: 0.65rem 0.9rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

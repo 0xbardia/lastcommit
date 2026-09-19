@@ -1,0 +1,269 @@
+{
+  "account": "0x8b6a1A414a74fAfc813D16D2d86D6167b659A18C",
+  "network": "studionet",
+  "rpc": "https://studio.genlayer.com/api",
+  "schema": {
+    "ctor": {
+      "params": [],
+      "kwparams": {}
+    },
+    "methods": {
+      "get_latest_review": {
+        "params": [
+          [
+            "project_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": {
+          "review_id": "int",
+          "project_id": "int",
+          "requester": "address",
+          "verdict": "string",
+          "summary": "string",
+          "development_status": "string",
+          "maintenance_status": "string",
+          "infrastructure_status": "string",
+          "stewardship_status": "string",
+          "evidence_summary": "string",
+          "evaluated_sources": "string",
+          "policy_kind": "string",
+          "policy_text": "string",
+          "policy_version": "int",
+          "github_url": "string",
+          "website_url": "string",
+          "docs_url": "string",
+          "announcement_url": "string",
+          "succession_eligible": "bool",
+          "status": "string"
+        }
+      },
+      "get_project": {
+        "params": [
+          [
+            "project_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": {
+          "project_id": "int",
+          "name": "string",
+          "description": "string",
+          "owner": "address",
+          "github_url": "string",
+          "website_url": "string",
+          "docs_url": "string",
+          "announcement_url": "string",
+          "policy_kind": "string",
+          "policy_text": "string",
+          "policy_version": "int",
+          "succession_note": "string",
+          "created_review_count": "int",
+          "latest_review_id": "int",
+          "latest_verdict": "string",
+          "succession_eligible": "bool"
+        }
+      },
+      "get_project_count": {
+        "params": [],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "int"
+      },
+      "get_project_reviews": {
+        "params": [
+          [
+            "project_id",
+            "int"
+          ],
+          [
+            "offset",
+            "int"
+          ],
+          [
+            "limit",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": [
+          {
+            "$rep": "int"
+          }
+        ]
+      },
+      "get_project_status": {
+        "params": [
+          [
+            "project_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "string"
+      },
+      "get_review": {
+        "params": [
+          [
+            "review_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": {
+          "review_id": "int",
+          "project_id": "int",
+          "requester": "address",
+          "verdict": "string",
+          "summary": "string",
+          "development_status": "string",
+          "maintenance_status": "string",
+          "infrastructure_status": "string",
+          "stewardship_status": "string",
+          "evidence_summary": "string",
+          "evaluated_sources": "string",
+          "policy_kind": "string",
+          "policy_text": "string",
+          "policy_version": "int",
+          "github_url": "string",
+          "website_url": "string",
+          "docs_url": "string",
+          "announcement_url": "string",
+          "succession_eligible": "bool",
+          "status": "string"
+        }
+      },
+      "get_review_count": {
+        "params": [],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "int"
+      },
+      "is_succession_eligible": {
+        "params": [
+          [
+            "project_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "bool"
+      },
+      "register_project": {
+        "params": [
+          [
+            "name",
+            "string"
+          ],
+          [
+            "description",
+            "string"
+          ],
+          [
+            "github_url",
+            "string"
+          ],
+          [
+            "website_url",
+            "string"
+          ],
+          [
+            "docs_url",
+            "string"
+          ],
+          [
+            "announcement_url",
+            "string"
+          ],
+          [
+            "policy_kind",
+            "string"
+          ],
+          [
+            "custom_policy",
+            "string"
+          ],
+          [
+            "succession_note",
+            "string"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "null",
+        "payable": false
+      },
+      "start_review": {
+        "params": [
+          [
+            "project_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "null",
+        "payable": false
+      },
+      "update_project": {
+        "params": [
+          [
+            "project_id",
+            "int"
+          ],
+          [
+            "name",
+            "string"
+          ],
+          [
+            "description",
+            "string"
+          ],
+          [
+            "github_url",
+            "string"
+          ],
+          [
+            "website_url",
+            "string"
+          ],
+          [
+            "docs_url",
+            "string"
+          ],
+          [
+            "announcement_url",
+            "string"
+          ],
+          [
+            "policy_kind",
+            "string"
+          ],
+          [
+            "custom_policy",
+            "string"
+          ],
+          [
+            "succession_note",
+            "string"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "null",
+        "payable": false
+      }
+    }
+  },
+  "txHash": "0x13f2c9165c4f45f3ce27ab1e28ad8886347a883a2fe80dc7838bf69bebb74545",
+  "receiptStatus": 5,
+  "contractAddress": "0x9A5036CB16166071979c94DE8eB571dA295f2719"
+}

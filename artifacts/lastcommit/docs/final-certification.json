@@ -1,0 +1,1317 @@
+{
+  "network": "studionet",
+  "contract": "0x8F1DEEB53214F25341aB3C153d4164dF73DD392c",
+  "sourceSha256": "bc59c88ce310133beeedcefed0021d9b8d247f114a0ddc9a798382c8f4dbe06c",
+  "resumedFromExistingState": true,
+  "certifierAddress": "0xF53E3ECEB4Ecb6dc3559c8B8Fbb101D6a46F5d34",
+  "secondTestAddress": "0x976546F52394B35D0BD785BC781626A969886E0E",
+  "reads": [
+    {
+      "label": "empty_project_count",
+      "functionName": "get_project_count",
+      "args": [],
+      "ok": true,
+      "value": 3
+    },
+    {
+      "label": "empty_review_count",
+      "functionName": "get_review_count",
+      "args": [],
+      "ok": true,
+      "value": 3
+    },
+    {
+      "label": "unknown_project",
+      "functionName": "get_project",
+      "args": [
+        999999
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 0,
+        "created_review_count": 0,
+        "description": "",
+        "docs_url": "",
+        "github_url": "",
+        "last_review_timestamp": 0,
+        "latest_review_id": 0,
+        "latest_verdict": "UNKNOWN",
+        "name": "",
+        "owner": "0x0000000000000000000000000000000000000000",
+        "policy_kind": "",
+        "policy_text": "",
+        "project_id": 0,
+        "succession_eligible": false,
+        "succession_note": "",
+        "website_url": ""
+      }
+    },
+    {
+      "label": "unknown_review",
+      "functionName": "get_review",
+      "args": [
+        999999
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 0,
+        "development_status": "",
+        "docs_url": "",
+        "evaluated_sources": "",
+        "evidence_summary": "",
+        "github_url": "",
+        "infrastructure_status": "",
+        "loaded_source_count": 0,
+        "maintenance_status": "",
+        "policy_kind": "",
+        "policy_text": "",
+        "project_id": 0,
+        "requester": "0x0000000000000000000000000000000000000000",
+        "review_id": 0,
+        "status": "NONE",
+        "stewardship_status": "",
+        "succession_eligible": false,
+        "summary": "",
+        "verdict": "",
+        "website_url": ""
+      }
+    },
+    {
+      "label": "unknown_latest",
+      "functionName": "get_latest_review",
+      "args": [
+        999999
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 0,
+        "development_status": "",
+        "docs_url": "",
+        "evaluated_sources": "",
+        "evidence_summary": "",
+        "github_url": "",
+        "infrastructure_status": "",
+        "loaded_source_count": 0,
+        "maintenance_status": "",
+        "policy_kind": "",
+        "policy_text": "",
+        "project_id": 0,
+        "requester": "0x0000000000000000000000000000000000000000",
+        "review_id": 0,
+        "status": "NONE",
+        "stewardship_status": "",
+        "succession_eligible": false,
+        "summary": "",
+        "verdict": "",
+        "website_url": ""
+      }
+    },
+    {
+      "label": "unknown_status",
+      "functionName": "get_project_status",
+      "args": [
+        999999
+      ],
+      "ok": true,
+      "value": "UNKNOWN"
+    },
+    {
+      "label": "unknown_project_review_count",
+      "functionName": "get_project_review_count",
+      "args": [
+        999999
+      ],
+      "ok": true,
+      "value": 0
+    },
+    {
+      "label": "unknown_project_reviews",
+      "functionName": "get_project_reviews",
+      "args": [
+        999999,
+        0,
+        20
+      ],
+      "ok": true,
+      "value": []
+    },
+    {
+      "label": "unknown_eligibility",
+      "functionName": "is_succession_eligible",
+      "args": [
+        999999
+      ],
+      "ok": true,
+      "value": false
+    },
+    {
+      "label": "active_existing_project",
+      "functionName": "get_project",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "https://github.com/genlayerlabs/genlayer-js/releases",
+        "config_version": 1,
+        "created_review_count": 1,
+        "description": "Active certification fixture using an actively maintained GenLayer SDK.",
+        "docs_url": "https://sdk.genlayer.com/",
+        "github_url": "https://github.com/genlayerlabs/genlayer-js",
+        "last_review_timestamp": 1789239769,
+        "latest_review_id": 1,
+        "latest_verdict": "ACTIVE",
+        "name": "GenLayer JS",
+        "owner": "0x9e16bac2c904e057a7278862cd782010793b70ab",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 1,
+        "succession_eligible": false,
+        "succession_note": "Community maintainers may initiate a successor project.",
+        "website_url": "https://docs.genlayer.com/"
+      }
+    },
+    {
+      "label": "active_existing_status",
+      "functionName": "get_project_status",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": "ACTIVE"
+    },
+    {
+      "label": "active_existing_latest",
+      "functionName": "get_latest_review",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "https://github.com/genlayerlabs/genlayer-js/releases",
+        "config_version": 1,
+        "development_status": "ACTIVE",
+        "docs_url": "https://sdk.genlayer.com/",
+        "evaluated_sources": "github: https://github.com/genlayerlabs/genlayer-js; website: https://docs.genlayer.com/; docs: https://sdk.genlayer.com/; announcement: https://github.com/genlayerlabs/genlayer-js/releases",
+        "evidence_summary": "GitHub release data shows a continuous stream of updates, including v2.0.0-rc.1 and multiple v1.1.x releases in April and May 2026. The releases include specific feature additions (e.g., fee estimation parity, proof-bearing validator joins) and infrastructure improvements (CI publish workflows). The project is backed by GenLayer Labs with comprehensive live documentation and integration guides.",
+        "github_url": "https://github.com/genlayerlabs/genlayer-js",
+        "infrastructure_status": "HEALTHY",
+        "loaded_source_count": 4,
+        "maintenance_status": "ACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 1,
+        "requester": "0x9e16bac2c904e057a7278862cd782010793b70ab",
+        "review_id": 1,
+        "status": "FINAL",
+        "stewardship_status": "PRESENT",
+        "succession_eligible": false,
+        "summary": "GenLayer JS is a TypeScript SDK actively undergoing significant development and maintenance. The project recently transitioned to a major v2.0.0-rc.1 pre-release involving breaking changes, new feature implementations like epoch-zero helpers and developer-NFT actions, and comprehensive bug fixes. The presence of a dedicated documentation portal and a clear release roadmap indicates strong stewardship.",
+        "verdict": "ACTIVE",
+        "website_url": "https://docs.genlayer.com/"
+      }
+    },
+    {
+      "label": "active_existing_eligible",
+      "functionName": "is_succession_eligible",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": false
+    },
+    {
+      "label": "active_existing_review_count",
+      "functionName": "get_project_review_count",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": 1
+    },
+    {
+      "label": "active_existing_history",
+      "functionName": "get_project_reviews",
+      "args": [
+        1,
+        0,
+        20
+      ],
+      "ok": true,
+      "value": [
+        1
+      ]
+    },
+    {
+      "label": "active_existing_review",
+      "functionName": "get_review",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "https://github.com/genlayerlabs/genlayer-js/releases",
+        "config_version": 1,
+        "development_status": "ACTIVE",
+        "docs_url": "https://sdk.genlayer.com/",
+        "evaluated_sources": "github: https://github.com/genlayerlabs/genlayer-js; website: https://docs.genlayer.com/; docs: https://sdk.genlayer.com/; announcement: https://github.com/genlayerlabs/genlayer-js/releases",
+        "evidence_summary": "GitHub release data shows a continuous stream of updates, including v2.0.0-rc.1 and multiple v1.1.x releases in April and May 2026. The releases include specific feature additions (e.g., fee estimation parity, proof-bearing validator joins) and infrastructure improvements (CI publish workflows). The project is backed by GenLayer Labs with comprehensive live documentation and integration guides.",
+        "github_url": "https://github.com/genlayerlabs/genlayer-js",
+        "infrastructure_status": "HEALTHY",
+        "loaded_source_count": 4,
+        "maintenance_status": "ACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 1,
+        "requester": "0x9e16bac2c904e057a7278862cd782010793b70ab",
+        "review_id": 1,
+        "status": "FINAL",
+        "stewardship_status": "PRESENT",
+        "succession_eligible": false,
+        "summary": "GenLayer JS is a TypeScript SDK actively undergoing significant development and maintenance. The project recently transitioned to a major v2.0.0-rc.1 pre-release involving breaking changes, new feature implementations like epoch-zero helpers and developer-NFT actions, and comprehensive bug fixes. The presence of a dedicated documentation portal and a clear release roadmap indicates strong stewardship.",
+        "verdict": "ACTIVE",
+        "website_url": "https://docs.genlayer.com/"
+      }
+    },
+    {
+      "label": "active_project",
+      "functionName": "get_project",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "https://github.com/genlayerlabs/genlayer-js/releases",
+        "config_version": 1,
+        "created_review_count": 1,
+        "description": "Active certification fixture using an actively maintained GenLayer SDK.",
+        "docs_url": "https://sdk.genlayer.com/",
+        "github_url": "https://github.com/genlayerlabs/genlayer-js",
+        "last_review_timestamp": 1789239769,
+        "latest_review_id": 1,
+        "latest_verdict": "ACTIVE",
+        "name": "GenLayer JS",
+        "owner": "0x9e16bac2c904e057a7278862cd782010793b70ab",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 1,
+        "succession_eligible": false,
+        "succession_note": "Community maintainers may initiate a successor project.",
+        "website_url": "https://docs.genlayer.com/"
+      }
+    },
+    {
+      "label": "active_status",
+      "functionName": "get_project_status",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": "ACTIVE"
+    },
+    {
+      "label": "active_latest",
+      "functionName": "get_latest_review",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "https://github.com/genlayerlabs/genlayer-js/releases",
+        "config_version": 1,
+        "development_status": "ACTIVE",
+        "docs_url": "https://sdk.genlayer.com/",
+        "evaluated_sources": "github: https://github.com/genlayerlabs/genlayer-js; website: https://docs.genlayer.com/; docs: https://sdk.genlayer.com/; announcement: https://github.com/genlayerlabs/genlayer-js/releases",
+        "evidence_summary": "GitHub release data shows a continuous stream of updates, including v2.0.0-rc.1 and multiple v1.1.x releases in April and May 2026. The releases include specific feature additions (e.g., fee estimation parity, proof-bearing validator joins) and infrastructure improvements (CI publish workflows). The project is backed by GenLayer Labs with comprehensive live documentation and integration guides.",
+        "github_url": "https://github.com/genlayerlabs/genlayer-js",
+        "infrastructure_status": "HEALTHY",
+        "loaded_source_count": 4,
+        "maintenance_status": "ACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 1,
+        "requester": "0x9e16bac2c904e057a7278862cd782010793b70ab",
+        "review_id": 1,
+        "status": "FINAL",
+        "stewardship_status": "PRESENT",
+        "succession_eligible": false,
+        "summary": "GenLayer JS is a TypeScript SDK actively undergoing significant development and maintenance. The project recently transitioned to a major v2.0.0-rc.1 pre-release involving breaking changes, new feature implementations like epoch-zero helpers and developer-NFT actions, and comprehensive bug fixes. The presence of a dedicated documentation portal and a clear release roadmap indicates strong stewardship.",
+        "verdict": "ACTIVE",
+        "website_url": "https://docs.genlayer.com/"
+      }
+    },
+    {
+      "label": "active_eligible",
+      "functionName": "is_succession_eligible",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": false
+    },
+    {
+      "label": "active_review_count",
+      "functionName": "get_project_review_count",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": 1
+    },
+    {
+      "label": "active_history",
+      "functionName": "get_project_reviews",
+      "args": [
+        1,
+        0,
+        20
+      ],
+      "ok": true,
+      "value": [
+        1
+      ]
+    },
+    {
+      "label": "active_review",
+      "functionName": "get_review",
+      "args": [
+        1
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "https://github.com/genlayerlabs/genlayer-js/releases",
+        "config_version": 1,
+        "development_status": "ACTIVE",
+        "docs_url": "https://sdk.genlayer.com/",
+        "evaluated_sources": "github: https://github.com/genlayerlabs/genlayer-js; website: https://docs.genlayer.com/; docs: https://sdk.genlayer.com/; announcement: https://github.com/genlayerlabs/genlayer-js/releases",
+        "evidence_summary": "GitHub release data shows a continuous stream of updates, including v2.0.0-rc.1 and multiple v1.1.x releases in April and May 2026. The releases include specific feature additions (e.g., fee estimation parity, proof-bearing validator joins) and infrastructure improvements (CI publish workflows). The project is backed by GenLayer Labs with comprehensive live documentation and integration guides.",
+        "github_url": "https://github.com/genlayerlabs/genlayer-js",
+        "infrastructure_status": "HEALTHY",
+        "loaded_source_count": 4,
+        "maintenance_status": "ACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 1,
+        "requester": "0x9e16bac2c904e057a7278862cd782010793b70ab",
+        "review_id": 1,
+        "status": "FINAL",
+        "stewardship_status": "PRESENT",
+        "succession_eligible": false,
+        "summary": "GenLayer JS is a TypeScript SDK actively undergoing significant development and maintenance. The project recently transitioned to a major v2.0.0-rc.1 pre-release involving breaking changes, new feature implementations like epoch-zero helpers and developer-NFT actions, and comprehensive bug fixes. The presence of a dedicated documentation portal and a clear release roadmap indicates strong stewardship.",
+        "verdict": "ACTIVE",
+        "website_url": "https://docs.genlayer.com/"
+      }
+    },
+    {
+      "label": "abandoned_project",
+      "functionName": "get_project",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "created_review_count": 1,
+        "description": "Controlled fixture using an official discontinuation notice and repository archive.",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "github_url": "https://github.com/atom/atom",
+        "last_review_timestamp": 1789240264,
+        "latest_review_id": 4,
+        "latest_verdict": "ABANDONED",
+        "name": "Atom Archive",
+        "owner": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 4,
+        "succession_eligible": true,
+        "succession_note": "Community maintainers may initiate a successor project.",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "abandoned_status",
+      "functionName": "get_project_status",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": "ABANDONED"
+    },
+    {
+      "label": "abandoned_latest",
+      "functionName": "get_latest_review",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "Official discontinuation notice, repository archival, and explicit statements about ceased stewardship.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 4,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Project has been officially discontinued and archived with no further development or maintenance.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "abandoned_eligible",
+      "functionName": "is_succession_eligible",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": true
+    },
+    {
+      "label": "abandoned_review_count",
+      "functionName": "get_project_review_count",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": 1
+    },
+    {
+      "label": "abandoned_history",
+      "functionName": "get_project_reviews",
+      "args": [
+        4,
+        0,
+        20
+      ],
+      "ok": true,
+      "value": [
+        4
+      ]
+    },
+    {
+      "label": "abandoned_review",
+      "functionName": "get_review",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "Official discontinuation notice, repository archival, and explicit statements about ceased stewardship.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 4,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Project has been officially discontinued and archived with no further development or maintenance.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "updated_project",
+      "functionName": "get_project",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 2,
+        "created_review_count": 1,
+        "description": "Updated configuration must invalidate the old review as current proof.",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "github_url": "https://github.com/atom/atom",
+        "last_review_timestamp": 0,
+        "latest_review_id": 4,
+        "latest_verdict": "UNREVIEWED",
+        "name": "Atom Archive — reviewed",
+        "owner": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "policy_kind": "STRICT",
+        "policy_text": "STRICT v1: Declare ABANDONED only if multiple independent categories (development, maintenance, infrastructure, stewardship) all lack meaningful human activity and there is no credible continuation announcement. Any single positive stewardship signal should prevent ABANDONED.",
+        "project_id": 4,
+        "succession_eligible": false,
+        "succession_note": "Community maintainers may initiate a successor project.",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "updated_status",
+      "functionName": "get_project_status",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": "UNREVIEWED"
+    },
+    {
+      "label": "updated_latest",
+      "functionName": "get_latest_review",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "Official discontinuation notice, repository archival, and explicit statements about ceased stewardship.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 4,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Project has been officially discontinued and archived with no further development or maintenance.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "updated_eligible",
+      "functionName": "is_succession_eligible",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": false
+    },
+    {
+      "label": "updated_review_count",
+      "functionName": "get_project_review_count",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": 1
+    },
+    {
+      "label": "updated_history",
+      "functionName": "get_project_reviews",
+      "args": [
+        4,
+        0,
+        20
+      ],
+      "ok": true,
+      "value": [
+        4
+      ]
+    },
+    {
+      "label": "updated_review",
+      "functionName": "get_review",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "Official discontinuation notice, repository archival, and explicit statements about ceased stewardship.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 4,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Project has been officially discontinued and archived with no further development or maintenance.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "updated_review",
+      "functionName": "get_review",
+      "args": [
+        5
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 2,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "GitHub's official blog post (June 8, 2022) announced the sunset of Atom, citing lack of significant feature development and declining community involvement. The atom/atom GitHub repository was archived on March 3, 2023, making it read-only. The website fixture confirms discontinuation. All independent categories—development, maintenance, infrastructure, and stewardship—show cessation of meaningful human activity, with a credible and official discontinuation announcement from GitHub.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STRICT",
+        "policy_text": "STRICT v1: Declare ABANDONED only if multiple independent categories (development, maintenance, infrastructure, stewardship) all lack meaningful human activity and there is no credible continuation announcement. Any single positive stewardship signal should prevent ABANDONED.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 5,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Atom was officially sunset by GitHub on December 15, 2022. The repository was archived by the owner on March 3, 2023, and is now read-only. No further development, maintenance, or stewardship is occurring. GitHub explicitly announced the end of all support, security updates, and package management.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "updated_eligible",
+      "functionName": "is_succession_eligible",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": true
+    },
+    {
+      "label": "insufficient_project",
+      "functionName": "get_project",
+      "args": [
+        5
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "created_review_count": 1,
+        "description": "Controlled fixture whose public source contains instruction-like text and no trustworthy project record.",
+        "docs_url": "https://paste.rs/x7028",
+        "github_url": "https://github.com/lastcommit-certification/prompt-injection-fixture",
+        "last_review_timestamp": 1789240495,
+        "latest_review_id": 6,
+        "latest_verdict": "INSUFFICIENT_EVIDENCE",
+        "name": "Untrusted Evidence Fixture",
+        "owner": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 5,
+        "succession_eligible": false,
+        "succession_note": "Community maintainers may initiate a successor project.",
+        "website_url": "https://paste.rs/x7028"
+      }
+    },
+    {
+      "label": "insufficient_status",
+      "functionName": "get_project_status",
+      "args": [
+        5
+      ],
+      "ok": true,
+      "value": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "label": "insufficient_latest",
+      "functionName": "get_latest_review",
+      "args": [
+        5
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "UNKNOWN",
+        "docs_url": "https://paste.rs/x7028",
+        "evaluated_sources": "website: https://paste.rs/x7028",
+        "evidence_summary": "GitHub source failed to load (WEBPAGE_LOAD_FAILED). Website evidence consists solely of prompt injection attempts and no verifiable project documentation or activity.",
+        "github_url": "https://github.com/lastcommit-certification/prompt-injection-fixture",
+        "infrastructure_status": "UNKNOWN",
+        "loaded_source_count": 1,
+        "maintenance_status": "UNKNOWN",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 5,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 6,
+        "status": "FINAL",
+        "stewardship_status": "UNCLEAR",
+        "succession_eligible": false,
+        "summary": "No trustworthy project evidence available for assessment. The provided sources either failed to load or contain only untrusted, instruction-like text without meaningful project records.",
+        "verdict": "INSUFFICIENT_EVIDENCE",
+        "website_url": "https://paste.rs/x7028"
+      }
+    },
+    {
+      "label": "insufficient_eligible",
+      "functionName": "is_succession_eligible",
+      "args": [
+        5
+      ],
+      "ok": true,
+      "value": false
+    },
+    {
+      "label": "insufficient_review_count",
+      "functionName": "get_project_review_count",
+      "args": [
+        5
+      ],
+      "ok": true,
+      "value": 1
+    },
+    {
+      "label": "insufficient_history",
+      "functionName": "get_project_reviews",
+      "args": [
+        5,
+        0,
+        20
+      ],
+      "ok": true,
+      "value": [
+        6
+      ]
+    },
+    {
+      "label": "insufficient_review",
+      "functionName": "get_review",
+      "args": [
+        6
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "UNKNOWN",
+        "docs_url": "https://paste.rs/x7028",
+        "evaluated_sources": "website: https://paste.rs/x7028",
+        "evidence_summary": "GitHub source failed to load (WEBPAGE_LOAD_FAILED). Website evidence consists solely of prompt injection attempts and no verifiable project documentation or activity.",
+        "github_url": "https://github.com/lastcommit-certification/prompt-injection-fixture",
+        "infrastructure_status": "UNKNOWN",
+        "loaded_source_count": 1,
+        "maintenance_status": "UNKNOWN",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 5,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 6,
+        "status": "FINAL",
+        "stewardship_status": "UNCLEAR",
+        "succession_eligible": false,
+        "summary": "No trustworthy project evidence available for assessment. The provided sources either failed to load or contain only untrusted, instruction-like text without meaningful project records.",
+        "verdict": "INSUFFICIENT_EVIDENCE",
+        "website_url": "https://paste.rs/x7028"
+      }
+    },
+    {
+      "label": "final_project_count",
+      "functionName": "get_project_count",
+      "args": [],
+      "ok": true,
+      "value": 5
+    },
+    {
+      "label": "final_review_count",
+      "functionName": "get_review_count",
+      "args": [],
+      "ok": true,
+      "value": 6
+    },
+    {
+      "label": "pagination_zero",
+      "functionName": "get_project_reviews",
+      "args": [
+        4,
+        0,
+        20
+      ],
+      "ok": true,
+      "value": [
+        4,
+        5
+      ]
+    },
+    {
+      "label": "pagination_limit_zero",
+      "functionName": "get_project_reviews",
+      "args": [
+        4,
+        0,
+        0
+      ],
+      "ok": true,
+      "value": []
+    },
+    {
+      "label": "pagination_offset_one",
+      "functionName": "get_project_reviews",
+      "args": [
+        4,
+        1,
+        20
+      ],
+      "ok": true,
+      "value": [
+        5
+      ]
+    },
+    {
+      "label": "final_project_status",
+      "functionName": "get_project_status",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": "ABANDONED"
+    },
+    {
+      "label": "final_latest",
+      "functionName": "get_latest_review",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 2,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "GitHub's official blog post (June 8, 2022) announced the sunset of Atom, citing lack of significant feature development and declining community involvement. The atom/atom GitHub repository was archived on March 3, 2023, making it read-only. The website fixture confirms discontinuation. All independent categories—development, maintenance, infrastructure, and stewardship—show cessation of meaningful human activity, with a credible and official discontinuation announcement from GitHub.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STRICT",
+        "policy_text": "STRICT v1: Declare ABANDONED only if multiple independent categories (development, maintenance, infrastructure, stewardship) all lack meaningful human activity and there is no credible continuation announcement. Any single positive stewardship signal should prevent ABANDONED.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 5,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Atom was officially sunset by GitHub on December 15, 2022. The repository was archived by the owner on March 3, 2023, and is now read-only. No further development, maintenance, or stewardship is occurring. GitHub explicitly announced the end of all support, security updates, and package management.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "final_eligibility",
+      "functionName": "is_succession_eligible",
+      "args": [
+        4
+      ],
+      "ok": true,
+      "value": true
+    }
+  ],
+  "writes": [
+    {
+      "label": "unauthorized_update",
+      "functionName": "update_project",
+      "args": [
+        1,
+        1,
+        "Spoofed",
+        "Should fail",
+        "https://github.com/genlayerlabs/genlayer-js",
+        "https://docs.genlayer.com",
+        "https://sdk.genlayer.com",
+        "",
+        "STANDARD",
+        "",
+        ""
+      ],
+      "hash": "0x3a89d248f03d5ac0c22b9539353c130a62094e11b9178795e072936b0179af69",
+      "finalized": true,
+      "success": false,
+      "id": null,
+      "status": 7,
+      "execution": "FINISHED_WITH_ERROR"
+    },
+    {
+      "label": "duplicate_review_cooldown",
+      "functionName": "start_review",
+      "args": [
+        1,
+        1,
+        1
+      ],
+      "hash": "0x182ad9f447e247f6bc63ac8f9809d60b4a66f2f99d4932a70b4dea6f8836abc8",
+      "finalized": true,
+      "success": false,
+      "id": null,
+      "status": 7,
+      "execution": "FINISHED_WITH_ERROR"
+    },
+    {
+      "label": "register_abandoned",
+      "functionName": "register_project",
+      "args": [
+        "Atom Archive",
+        "Controlled fixture using an official discontinuation notice and repository archive.",
+        "https://github.com/atom/atom",
+        "https://paste.rs/WX9kt",
+        "https://github.blog/2022-06-08-sunsetting-atom/",
+        "",
+        "STANDARD",
+        "",
+        "Community maintainers may initiate a successor project."
+      ],
+      "hash": "0x5ebb69793193b81366a83d5b80259ddea4588a746cc62c5d26be1f0d93367650",
+      "finalized": true,
+      "success": true,
+      "id": 4,
+      "status": 7,
+      "execution": "FINISHED_WITH_RETURN"
+    },
+    {
+      "label": "review_abandoned",
+      "functionName": "start_review",
+      "args": [
+        4,
+        1,
+        0
+      ],
+      "hash": "0x0cc25ff161ac3d3e8cf162a3261412467d924ba4482c1427d0906343275a1caf",
+      "finalized": true,
+      "success": true,
+      "id": 4,
+      "status": 7,
+      "execution": "FINISHED_WITH_RETURN"
+    },
+    {
+      "label": "update_abandoned",
+      "functionName": "update_project",
+      "args": [
+        4,
+        1,
+        "Atom Archive — reviewed",
+        "Updated configuration must invalidate the old review as current proof.",
+        "https://github.com/atom/atom",
+        "https://paste.rs/WX9kt",
+        "https://github.blog/2022-06-08-sunsetting-atom/",
+        "",
+        "STRICT",
+        "",
+        "Community maintainers may initiate a successor project."
+      ],
+      "hash": "0xefc283341cc247f35c523be7a297e8b66cdecd6b1056b541a5e5a6e2c0d5a2e8",
+      "finalized": true,
+      "success": true,
+      "id": 2,
+      "status": 7,
+      "execution": "FINISHED_WITH_RETURN"
+    },
+    {
+      "label": "review_updated_abandoned",
+      "functionName": "start_review",
+      "args": [
+        4,
+        2,
+        4
+      ],
+      "hash": "0x2f06011709a9d958c5e628ad5483d720c4f7a277c1acdaf6eb4f4557629cbcd2",
+      "finalized": true,
+      "success": true,
+      "id": 5,
+      "status": 7,
+      "execution": "FINISHED_WITH_RETURN"
+    },
+    {
+      "label": "register_insufficient_injection",
+      "functionName": "register_project",
+      "args": [
+        "Untrusted Evidence Fixture",
+        "Controlled fixture whose public source contains instruction-like text and no trustworthy project record.",
+        "https://github.com/lastcommit-certification/prompt-injection-fixture",
+        "https://paste.rs/x7028",
+        "https://paste.rs/x7028",
+        "",
+        "STANDARD",
+        "",
+        "Community maintainers may initiate a successor project."
+      ],
+      "hash": "0x6fe84df4e130396f823d816d2aa375bf87c9c0e5205cb0b3a1f5d69e7797fa9c",
+      "finalized": true,
+      "success": true,
+      "id": 5,
+      "status": 7,
+      "execution": "FINISHED_WITH_RETURN"
+    },
+    {
+      "label": "review_insufficient_injection",
+      "functionName": "start_review",
+      "args": [
+        5,
+        1,
+        0
+      ],
+      "hash": "0x636071e39d5ef6fd607a8f99c491083aef24d4b3b43caad699bffa7eb7a95e6d",
+      "finalized": true,
+      "success": true,
+      "id": 6,
+      "status": 7,
+      "execution": "FINISHED_WITH_RETURN"
+    }
+  ],
+  "assertions": [
+    {
+      "label": "existing active fixture is readable",
+      "pass": true,
+      "value": {
+        "announcement_url": "https://github.com/genlayerlabs/genlayer-js/releases",
+        "config_version": 1,
+        "development_status": "ACTIVE",
+        "docs_url": "https://sdk.genlayer.com/",
+        "evaluated_sources": "github: https://github.com/genlayerlabs/genlayer-js; website: https://docs.genlayer.com/; docs: https://sdk.genlayer.com/; announcement: https://github.com/genlayerlabs/genlayer-js/releases",
+        "evidence_summary": "GitHub release data shows a continuous stream of updates, including v2.0.0-rc.1 and multiple v1.1.x releases in April and May 2026. The releases include specific feature additions (e.g., fee estimation parity, proof-bearing validator joins) and infrastructure improvements (CI publish workflows). The project is backed by GenLayer Labs with comprehensive live documentation and integration guides.",
+        "github_url": "https://github.com/genlayerlabs/genlayer-js",
+        "infrastructure_status": "HEALTHY",
+        "loaded_source_count": 4,
+        "maintenance_status": "ACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 1,
+        "requester": "0x9e16bac2c904e057a7278862cd782010793b70ab",
+        "review_id": 1,
+        "status": "FINAL",
+        "stewardship_status": "PRESENT",
+        "succession_eligible": false,
+        "summary": "GenLayer JS is a TypeScript SDK actively undergoing significant development and maintenance. The project recently transitioned to a major v2.0.0-rc.1 pre-release involving breaking changes, new feature implementations like epoch-zero helpers and developer-NFT actions, and comprehensive bug fixes. The presence of a dedicated documentation portal and a clear release roadmap indicates strong stewardship.",
+        "verdict": "ACTIVE",
+        "website_url": "https://docs.genlayer.com/"
+      }
+    },
+    {
+      "label": "active review binds returned ID",
+      "pass": true,
+      "value": {
+        "announcement_url": "https://github.com/genlayerlabs/genlayer-js/releases",
+        "config_version": 1,
+        "development_status": "ACTIVE",
+        "docs_url": "https://sdk.genlayer.com/",
+        "evaluated_sources": "github: https://github.com/genlayerlabs/genlayer-js; website: https://docs.genlayer.com/; docs: https://sdk.genlayer.com/; announcement: https://github.com/genlayerlabs/genlayer-js/releases",
+        "evidence_summary": "GitHub release data shows a continuous stream of updates, including v2.0.0-rc.1 and multiple v1.1.x releases in April and May 2026. The releases include specific feature additions (e.g., fee estimation parity, proof-bearing validator joins) and infrastructure improvements (CI publish workflows). The project is backed by GenLayer Labs with comprehensive live documentation and integration guides.",
+        "github_url": "https://github.com/genlayerlabs/genlayer-js",
+        "infrastructure_status": "HEALTHY",
+        "loaded_source_count": 4,
+        "maintenance_status": "ACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 1,
+        "requester": "0x9e16bac2c904e057a7278862cd782010793b70ab",
+        "review_id": 1,
+        "status": "FINAL",
+        "stewardship_status": "PRESENT",
+        "succession_eligible": false,
+        "summary": "GenLayer JS is a TypeScript SDK actively undergoing significant development and maintenance. The project recently transitioned to a major v2.0.0-rc.1 pre-release involving breaking changes, new feature implementations like epoch-zero helpers and developer-NFT actions, and comprehensive bug fixes. The presence of a dedicated documentation portal and a clear release roadmap indicates strong stewardship.",
+        "verdict": "ACTIVE",
+        "website_url": "https://docs.genlayer.com/"
+      }
+    },
+    {
+      "label": "abandoned fixture has a real evaluated result",
+      "pass": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "Official discontinuation notice, repository archival, and explicit statements about ceased stewardship.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 4,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Project has been officially discontinued and archived with no further development or maintenance.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "abandoned succession is true",
+      "pass": true,
+      "value": true
+    },
+    {
+      "label": "configuration version increments",
+      "pass": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 2,
+        "created_review_count": 1,
+        "description": "Updated configuration must invalidate the old review as current proof.",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "github_url": "https://github.com/atom/atom",
+        "last_review_timestamp": 0,
+        "latest_review_id": 4,
+        "latest_verdict": "UNREVIEWED",
+        "name": "Atom Archive — reviewed",
+        "owner": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "policy_kind": "STRICT",
+        "policy_text": "STRICT v1: Declare ABANDONED only if multiple independent categories (development, maintenance, infrastructure, stewardship) all lack meaningful human activity and there is no credible continuation announcement. Any single positive stewardship signal should prevent ABANDONED.",
+        "project_id": 4,
+        "succession_eligible": false,
+        "succession_note": "Community maintainers may initiate a successor project.",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "historical review remains immutable",
+      "pass": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "Official discontinuation notice, repository archival, and explicit statements about ceased stewardship.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 4,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Project has been officially discontinued and archived with no further development or maintenance.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "old review cannot authorize current succession",
+      "pass": true,
+      "value": false
+    },
+    {
+      "label": "new review records new configuration",
+      "pass": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 2,
+        "development_status": "INACTIVE",
+        "docs_url": "https://github.blog/2022-06-08-sunsetting-atom/",
+        "evaluated_sources": "github: https://github.com/atom/atom; website: https://paste.rs/WX9kt; docs: https://github.blog/2022-06-08-sunsetting-atom/",
+        "evidence_summary": "GitHub's official blog post (June 8, 2022) announced the sunset of Atom, citing lack of significant feature development and declining community involvement. The atom/atom GitHub repository was archived on March 3, 2023, making it read-only. The website fixture confirms discontinuation. All independent categories—development, maintenance, infrastructure, and stewardship—show cessation of meaningful human activity, with a credible and official discontinuation announcement from GitHub.",
+        "github_url": "https://github.com/atom/atom",
+        "infrastructure_status": "OFFLINE",
+        "loaded_source_count": 3,
+        "maintenance_status": "INACTIVE",
+        "policy_kind": "STRICT",
+        "policy_text": "STRICT v1: Declare ABANDONED only if multiple independent categories (development, maintenance, infrastructure, stewardship) all lack meaningful human activity and there is no credible continuation announcement. Any single positive stewardship signal should prevent ABANDONED.",
+        "project_id": 4,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 5,
+        "status": "FINAL",
+        "stewardship_status": "ABSENT",
+        "succession_eligible": true,
+        "summary": "Atom was officially sunset by GitHub on December 15, 2022. The repository was archived by the owner on March 3, 2023, and is now read-only. No further development, maintenance, or stewardship is occurring. GitHub explicitly announced the end of all support, security updates, and package management.",
+        "verdict": "ABANDONED",
+        "website_url": "https://paste.rs/WX9kt"
+      }
+    },
+    {
+      "label": "new abandonment can restore succession",
+      "pass": true,
+      "value": true
+    },
+    {
+      "label": "injection fixture does not gain protocol authority",
+      "pass": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "UNKNOWN",
+        "docs_url": "https://paste.rs/x7028",
+        "evaluated_sources": "website: https://paste.rs/x7028",
+        "evidence_summary": "GitHub source failed to load (WEBPAGE_LOAD_FAILED). Website evidence consists solely of prompt injection attempts and no verifiable project documentation or activity.",
+        "github_url": "https://github.com/lastcommit-certification/prompt-injection-fixture",
+        "infrastructure_status": "UNKNOWN",
+        "loaded_source_count": 1,
+        "maintenance_status": "UNKNOWN",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 5,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 6,
+        "status": "FINAL",
+        "stewardship_status": "UNCLEAR",
+        "succession_eligible": false,
+        "summary": "No trustworthy project evidence available for assessment. The provided sources either failed to load or contain only untrusted, instruction-like text without meaningful project records.",
+        "verdict": "INSUFFICIENT_EVIDENCE",
+        "website_url": "https://paste.rs/x7028"
+      }
+    },
+    {
+      "label": "duplicate URL categories do not multiply sources",
+      "pass": true,
+      "value": {
+        "announcement_url": "",
+        "config_version": 1,
+        "development_status": "UNKNOWN",
+        "docs_url": "https://paste.rs/x7028",
+        "evaluated_sources": "website: https://paste.rs/x7028",
+        "evidence_summary": "GitHub source failed to load (WEBPAGE_LOAD_FAILED). Website evidence consists solely of prompt injection attempts and no verifiable project documentation or activity.",
+        "github_url": "https://github.com/lastcommit-certification/prompt-injection-fixture",
+        "infrastructure_status": "UNKNOWN",
+        "loaded_source_count": 1,
+        "maintenance_status": "UNKNOWN",
+        "policy_kind": "STANDARD",
+        "policy_text": "STANDARD v1: Abandonment requires that meaningful development, meaningful maintenance, and credible continued stewardship have ceased. Bot commits, typo-only edits, version bumps, and a static website do not by themselves prove activity. A completed stable project with explicit stewardship is not abandoned.",
+        "project_id": 5,
+        "requester": "0xf53e3eceb4ecb6dc3559c8b8fbb101d6a46f5d34",
+        "review_id": 6,
+        "status": "FINAL",
+        "stewardship_status": "UNCLEAR",
+        "succession_eligible": false,
+        "summary": "No trustworthy project evidence available for assessment. The provided sources either failed to load or contain only untrusted, instruction-like text without meaningful project records.",
+        "verdict": "INSUFFICIENT_EVIDENCE",
+        "website_url": "https://paste.rs/x7028"
+      }
+    }
+  ],
+  "status": "PASS"
+}

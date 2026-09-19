@@ -1,0 +1,66 @@
+# Secrets and local env
+.env
+.env.local
+.env.production
+.env.*.local
+*.pem
+*.key
+*.p12
+id_rsa
+id_ed25519
+
+# Dependencies and build output
+node_modules/
+.output/
+dist/
+coverage/
+.tanstack/
+.vercel/
+.nitro/
+.cache/
+
+# Logs and temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tmp/
+temp/
+*.tar.gz
+
+# Test / browser artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+screenshots/
+browser-profile/
+.playwright/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Platform / operator local
+.grok/
+.node_modules.lock
+AGENTS.md
+AGENTS.project.md
+
+# Nested historical snapshot secrets and superseded Next.js app tree
+artifacts/lastcommit/.env
+artifacts/lastcommit/src/
+artifacts/lastcommit/public/
+artifacts/lastcommit/next.config.ts
+artifacts/lastcommit/next-env.d.ts
+artifacts/lastcommit/package.json
+artifacts/lastcommit/tsconfig.json
+artifacts/lastcommit/playwright.config.ts
+artifacts/lastcommit/.gitignore
+artifacts/lastcommit/.env.example
+
+# Internal mission briefs
+attachments/lastcommit.md
+artifacts/browsed_files/

@@ -1,0 +1,44 @@
+{
+  "status": "CURRENT",
+  "network": "studionet",
+  "contract": "0x8F1DEEB53214F25341aB3C153d4164dF73DD392c",
+  "deploy_tx": "0x78baecf7507373723849e4c5da8c3c2a288810999396ae54f75cc8bbfbab114c",
+  "source_sha256": "bc59c88ce310133beeedcefed0021d9b8d247f114a0ddc9a798382c8f4dbe06c",
+  "unknown": {
+    "get_project_status(999999)": "UNKNOWN",
+    "is_succession_eligible(999999)": false,
+    "get_review(999999)": "review_id 0 / status NONE",
+    "get_latest_review(999999)": "review_id 0 / status NONE",
+    "get_project_review_count(999999)": 0,
+    "get_project_reviews(999999,0,20)": []
+  },
+  "current_counts": {
+    "get_project_count": 5,
+    "get_review_count": 6
+  },
+  "certified_states": {
+    "project_1": {
+      "get_project_status": "ACTIVE",
+      "get_latest_review": 1,
+      "is_succession_eligible": false,
+      "get_project_review_count": 1,
+      "get_project_reviews(0,20)": [1]
+    },
+    "project_4": {
+      "get_project_status": "ABANDONED",
+      "get_latest_review": 5,
+      "is_succession_eligible": true,
+      "get_project_review_count": 2,
+      "get_project_reviews(0,20)": [4, 5],
+      "historical_review_4_config_version": 1,
+      "current_config_version": 2
+    },
+    "project_5": {
+      "get_project_status": "INSUFFICIENT_EVIDENCE",
+      "get_latest_review": 6,
+      "is_succession_eligible": false,
+      "get_project_review_count": 1,
+      "get_project_reviews(0,20)": [6]
+    }
+  }
+}
